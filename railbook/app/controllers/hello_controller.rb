@@ -7,4 +7,8 @@ class HelloController < ApplicationController
     @msg = 'Hello World!'
     render 'hello/view'
   end
+
+  def list
+    @books = Book.all
+  end
 end
