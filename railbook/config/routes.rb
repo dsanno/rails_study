@@ -1,4 +1,12 @@
 Railbook::Application.routes.draw do
+  resources :fun_comments
+
+  resources :reviews
+
+  resources :authors
+
+  resources :users
+
   resources :books
 
   # The priority is based upon order of creation:
