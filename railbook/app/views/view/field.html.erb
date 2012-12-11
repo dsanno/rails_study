@@ -1,0 +1,45 @@
+<%= form_for(@book) do |f| %>
+  text_field:
+  <%= f.text_field :isbn,
+    { :size => 20, :maxlength => 25, :read_only => true } %><br />
+  password_field:
+  <%= f.password_field :isbn,
+    { :size => 10, :maxlength => 15, :disabled => true } %><br />
+  text_area:
+  <%= f.text_area :isbn,
+    { :cols => 40, :rows => 10 } %><br />
+  radio_button:
+  <label><%= f.radio_button :publish, '技術評論社', { :class => 'rd' } %>
+    技術評論社</label>
+  <label><%= f.radio_button :publish, '翔泳社', { :class => 'rd' } %>
+    翔泳社</label>
+  <label><%= f.radio_button :publish, 'マイコミ', { :class => 'rd' } %>
+    マイコミ</label><br />
+  check_box:
+  <label><%= f.check_box :cd, { :class => 'chk'}, 'yes', 'no' %>
+    CD付属?</label><br />
+  file_field:
+  <%= f.file_field :isbn,
+    { :size => 10, :maxlength => 15 } %><br />
+  email_field:
+  <%= f.email_field :isbn,
+    { :size => 10, :maxlength => 15 } %><br />
+  number_field:
+  <%= f.number_field :isbn,
+    { :size => 10, :maxlength => 15, :step => 10 } %><br />
+  range_field:
+  <%= f.range_field :isbn,
+    { :size => 10, :maxlength => 15, :max => 100, :min => 0 } %><br />
+  search_field:
+  <%= f.search_field :isbn,
+    { :size => 10, :maxlength => 15 } %><br />
+  telephone_field:
+  <%= f.telephone_field :isbn,
+    { :size => 10, :maxlength => 15 } %><br />
+  url_field:
+  <%= f.url_field :isbn,
+    { :size => 10, :maxlength => 15 } %><br />
+  hidden_field:
+  <%= f.hidden_field :isbn,
+    { :size => 10, :maxlength => 15 } %><br />
+<% end %>
