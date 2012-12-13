@@ -56,6 +56,7 @@ class BooksController < ApplicationController
   # PUT /books/1
   # PUT /books/1.json
   def update
+    sleep 3
     @book = Book.find(params[:id])
 
     respond_to do |format|
