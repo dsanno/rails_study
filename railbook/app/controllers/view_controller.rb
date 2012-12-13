@@ -41,4 +41,8 @@ class ViewController < ApplicationController
   def dat_select
     @book = Book.find(1)
   end
+
+  def fields
+    @user = User.find(1)
+  end
 end
