@@ -49,4 +49,8 @@ class ViewController < ApplicationController
   def cycle
     @books = Book.all
   end
+
+  def concat
+    @books = Book.all
+  end
 end
