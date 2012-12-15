@@ -1,0 +1,5 @@
+﻿<% msg = '<strong>Rails</strong>はRubyベースのフレームワークです。Railsに影響を受けたフレームワークには、CatalystやSymfonyなどがあります。' %>
+
+<%= highlight(msg, 'Rails') %>
+
+<%= highlight(msg, [ 'Rails', 'フレームワーク' ], :highlighter => '<a href="search?keyword=\1">\1</a>') %>
