@@ -1,0 +1,13 @@
+﻿<% @current = Time.now %>
+'%Y年%m月%d日 %H:%M:%S'<br />
+<%= @current.strftime('%Y年%m月%d日 %H:%M:%S') %><br />
+'%c'<br />
+<%= @current.strftime('%c') %><br />
+'%x'<br />
+<%= @current.strftime('%x') %><br />
+'%Y %B %A %p %I:%M:%S'<br />
+<%= @current.strftime('%Y %B %A %p %I:%M:%S') %><br />
+'%Z'<br />
+<%= @current.strftime('%z') %><br />
+'%U %W'
+<%= @current.strftime('%U %W') %><br />
