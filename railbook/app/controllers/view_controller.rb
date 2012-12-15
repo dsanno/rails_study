@@ -45,4 +45,8 @@ class ViewController < ApplicationController
   def fields
     @user = User.find(1)
   end
+
+  def cycle
+    @books = Book.all
+  end
 end
