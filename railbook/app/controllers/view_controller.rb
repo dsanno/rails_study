@@ -53,4 +53,8 @@ class ViewController < ApplicationController
   def concat
     @books = Book.all
   end
+
+  def partial_basic
+    @book = Book.find(2)
+  end
 end
